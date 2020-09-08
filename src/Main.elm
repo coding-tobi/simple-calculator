@@ -6,6 +6,15 @@ import Html.Attributes exposing (readonly, style, type_, value)
 import Html.Events exposing (onClick)
 
 
+main : Program () Model Msg
+main =
+    Browser.sandbox
+        { init = init
+        , update = update
+        , view = view
+        }
+
+
 
 -- TYPES
 
@@ -30,15 +39,6 @@ type Msg
     | Operation Operator
     | Calculate
     | Clear
-
-
-main : Program () Model Msg
-main =
-    Browser.sandbox
-        { init = init
-        , update = update
-        , view = view
-        }
 
 
 
