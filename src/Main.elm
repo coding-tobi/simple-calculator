@@ -163,7 +163,7 @@ view model =
         ]
         ([ input [ type_ "text", readonly True, style "width" "80%", value <| String.fromInt model.result ] []
          , span [] [ text " " ]
-         , span [] [ model.operation |> operatorToString |> text ]
+         , span [ style "color" "white" ] [ model.operation |> operatorToString |> text ]
          , input [ type_ "text", readonly True, style "width" "80%", value <| String.fromInt model.input ] []
          , hr [] []
          ]
