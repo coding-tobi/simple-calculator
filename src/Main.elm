@@ -154,7 +154,13 @@ view model =
                 |> List.concat
     in
     div
-        [ style "width" "200px", style "margin" "20px" ]
+        [ style "background-color" "#0A7CC4"
+        , style "box-shadow" "5px 5px #075485"
+        , style "width" "200px"
+        , style "padding" "10px"
+        , style "margin-left" "auto"
+        , style "margin-right" "auto"
+        ]
         ([ input [ type_ "text", readonly True, style "width" "80%", value <| String.fromInt model.result ] []
          , span [] [ text " " ]
          , span [] [ model.operation |> operatorToString |> text ]
