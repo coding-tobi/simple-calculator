@@ -8,4 +8,4 @@ A really simple calculator, written in Elm.
    elm reactor
    ```
 3. Go to http://localhost:8000 to see the project dashboard.
-4. Navigate to src/Main.elm and try out the calculator.
+4. Navigate to src/SimpleCalculator.elm and try out the calculator.

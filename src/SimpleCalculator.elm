@@ -1,4 +1,4 @@
-module Main exposing (main)
+module SimpleCalculator exposing (main)
 
 import Browser
 import Html exposing (Html, br, button, div, hr, input, span, text)
