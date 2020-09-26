@@ -154,8 +154,10 @@ view model =
                 |> List.concat
     in
     div
-        [ style "background-color" "#0A7CC4"
-        , style "box-shadow" "5px 5px #075485"
+        [ style "background-color" "white"
+        , style "border" "2px solid #0A7CC4"
+        , style "border-radius" "4px"
+        , style "box-shadow" "0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02)"
         , style "width" "200px"
         , style "padding" "10px"
         , style "margin-left" "auto"
@@ -163,7 +165,7 @@ view model =
         ]
         ([ input [ type_ "text", readonly True, style "width" "80%", value <| String.fromInt model.result ] []
          , span [] [ text " " ]
-         , span [ style "color" "white" ] [ model.operation |> operatorToString |> text ]
+         , span [ style "color" "#0A7CC4" ] [ model.operation |> operatorToString |> text ]
          , input [ type_ "text", readonly True, style "width" "80%", value <| String.fromInt model.input ] []
          , hr [] []
          ]
